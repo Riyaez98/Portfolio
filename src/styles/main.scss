@@ -1,6 +1,18 @@
 //FONTS
 // ici sont chargé les Google Fonts avec le @import
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Caveat:wght@400;500;600;700&family=Love+Ya+Like+A+Sister&family=Montserrat&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'font__food';
+    src: url('../assets/fonts/Neoneon.otf');
+}
+@font-face {
+    font-family: 'font__planet';
+    src: url('../assets/fonts/fortheonehundredthtime.ttf');
+}
+@font-face {
+    font-family: 'font__video';
+    src: url('../assets/fonts/BraveEightyoneRegular-ZVGvm.ttf');
+}
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/cover';
