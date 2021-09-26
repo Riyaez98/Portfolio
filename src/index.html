@@ -3,13 +3,49 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Le titre de ta page</title>
+        <title>Ricardo Yanez - Portfolio</title>
 
         <link rel="stylesheet" href="styles/main.css" />
         <script src="scripts/main.js" defer></script>
     </head>
 
     <body>
-        <div class="site-container"></div>
+        <div class="site-container">
+            <header
+                class="header"
+                data-component="Header"
+                data-scroll-limit=".1"
+                data-auto-hide="true"
+            >
+                <div class="wrapper">
+                    <div class="header__brand">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="Logo" />
+                        </a>
+                    </div>
+                    <nav class="nav--primary">
+                        <ul>
+                            <li class="nav__item">
+                                <a href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="projets.html">Projets</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="a-propos.html">À propos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
     </body>
 </html>

@@ -31,6 +31,7 @@
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
+@import 'elements/html';
 @import 'elements/body';
 @import 'elements/headings';
 @import 'elements/links';
@@ -39,6 +40,9 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/pagination/pagination.scss';
+@import '../../node_modules/swiper/components/scrollbar/scrollbar.scss';
 @import 'components/header';
 @import 'components/icons';
 @import 'components/modal';
