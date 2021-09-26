@@ -6,11 +6,13 @@
         <title>Ricardo Yanez - Portfolio</title>
 
         <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="assets/images/favicon.png" />
+
         <script src="scripts/main.js" defer></script>
     </head>
 
     <body>
-        <div class="site-container">
+        <div class="site-container" data-component="Scrolly">
             <header
                 class="header"
                 data-component="Header"
@@ -46,6 +48,24 @@
                     </button>
                 </div>
             </header>
+            <section class="hero hero__accueil">
+                <div class="wrapper">
+                    <h1>
+                        Bienvenue au monde de <br />
+                        Ricardo Yanez!
+                    </h1>
+                    <h2>
+                        Apprenti en
+                        <span>développement web et design web </span>
+                    </h2>
+                    <div class="cta__hero">
+                        <button class="button">Voir mes projets</button>
+                        <button class="button button--secondary">
+                            Un peu plus sur moi
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>

@@ -2,6 +2,101 @@
    header / component
    ========================================================================== */
 
-/*
-      Vous devrez utiliser vos styles de base du cours de Conception Web 4 et les ajuster
-   */
+header {
+    background-color: var(--color-bg-secondary);
+    padding: var(--spacing-md);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transform: translateY(0);
+    transition: all 0.4s $ease-in-out-quad;
+    //  overflow-x: hidden;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-is-hidden.is-scrolling-down & {
+        transform: translateY(-100%) translateY(4px);
+        background-color: var(--color-secondary);
+    }
+}
+
+.header__toggle {
+    --bar-width: 60px;
+    --bar-height: 10px;
+    --bar-spacer: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    padding: 0;
+    position: relative;
+    width: var(--bar-width);
+    height: var(--bar-width);
+    z-index: 10;
+
+    span {
+        background: var(--color-secondary);
+        border-radius: 5px;
+        display: block;
+        height: var(--bar-height);
+        width: var(--bar-width);
+        position: absolute;
+        top: calc(50% - var(--bar-height) / 2);
+        //   left: calc(50% - var(--bar-width) / 2);
+
+        transition: 0.3s all;
+
+        &:nth-child(1) {
+            top: calc(
+                50% - var(--bar-height) / 2 - var(--bar-height) -
+                    var(--bar-spacer)
+            );
+        }
+        &:nth-child(2) {
+            width: calc((var(--bar-width) / 5) * 3.5);
+            right: 0;
+        }
+
+        &:nth-child(3) {
+            top: calc(
+                50% - var(--bar-height) / 2 + var(--bar-height) +
+                    var(--bar-spacer)
+            );
+            width: calc((var(--bar-width) / 5) * 2.5);
+            right: 0;
+        }
+    }
+
+    .nav-is-active & {
+        span {
+            top: calc(50% - var(--bar-height) / 2);
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: scaleX(0);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                width: var(--bar-width);
+            }
+        }
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        display: none;
+    }
+}
+
+.header__brand {
+    transform: scale(1);
+    transition: all 0.4s $ease-out-quad;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

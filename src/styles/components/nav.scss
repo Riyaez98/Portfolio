@@ -1,0 +1,108 @@
+/* ==========================================================================
+   nav / components
+   ========================================================================== */
+
+.nav--primary {
+    position: absolute;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    display: flex;
+    transition: all 0.6s 0.3s $ease-out-sine;
+    z-index: 1;
+
+    .nav-is-active & {
+        transform: translateX(-100%);
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        transform: none;
+        position: relative;
+        left: 0;
+        height: auto;
+        width: auto;
+        padding-top: 0;
+        display: block;
+        z-index: 2;
+        overflow-y: initial;
+        .nav-is-active & {
+            transform: translateX(0);
+        }
+    }
+
+    ul {
+        background-color: var(--color-black);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        transition: all 0.6s 0.3s $ease-out-sine;
+        opacity: 0;
+
+        .nav-is-active & {
+            opacity: 1;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: var(--font-size-h2-phone);
+            font-family: var(--font-secondary);
+            color: var(--color-white);
+            &:hover {
+                font-family: var(--font-tertiary);
+                color: var(--color-secondary);
+                font-weight: 700;
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: var(--font-size-h2-laptop);
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        background: none;
+        padding-top: 0;
+        position: relative;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+        ul {
+            background: none;
+            flex-direction: row;
+            align-items: center;
+            opacity: 1;
+            transform: none;
+        }
+        a {
+            //color: var(--color-black);
+            padding: 10px;
+            font-weight: 600;
+            font-size: var(--font-size-content) !important;
+        }
+    }
+}
+
+.nav__item {
+    padding-left: 20px;
+    transform: scale(1);
+    transition: all 0.4s $ease-out-back;
+    &:hover {
+        transform: scale(1.15);
+        transition: all 0.4s $ease-out-back;
+    }
+}
+
+.nav-is-active {
+    body {
+        overflow: hidden;
+    }
+}
