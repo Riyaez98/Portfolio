@@ -53,10 +53,11 @@
             width: 100%;
             text-align: center;
             font-size: var(--font-size-h2-phone);
-            font-family: var(--font-secondary);
+            font-family: var(--font-tertiary);
             color: var(--color-white);
             &:hover {
-                font-family: var(--font-tertiary);
+                transform: scale(1.15);
+                // transition: all 0.4s $ease-out-back;
                 color: var(--color-secondary);
                 font-weight: 700;
                 text-decoration: none;
@@ -92,17 +93,72 @@
 }
 
 .nav__item {
-    padding-left: 20px;
+    margin-left: 20px;
     transform: scale(1);
     transition: all 0.4s $ease-out-back;
-    &:hover {
-        transform: scale(1.15);
-        transition: all 0.4s $ease-out-back;
-    }
+    // &:hover {
+    //     transform: scale(1.15);
+    //     transition: all 0.4s $ease-out-back;
+    // }
 }
 
 .nav-is-active {
     body {
         overflow: hidden;
+    }
+}
+.nav__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul {
+        margin: 10px 50px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: var(--font-tertiary);
+        li {
+            margin: 0 25px;
+        }
+    }
+    a {
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.2);
+            color: var(--color-secondary);
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+    }
+    img {
+        max-height: 75px;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.5s;
+        }
+    }
+    .logo_foot_phone {
+        display: inline-block;
+    }
+    .logo_foot {
+        display: none;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        ul {
+            margin: 0 50px;
+        }
+
+        .logo_foot_phone {
+            display: none;
+        }
+        .logo_foot {
+            display: inline-block;
+        }
     }
 }

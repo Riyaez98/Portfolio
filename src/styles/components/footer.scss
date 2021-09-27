@@ -1,0 +1,15 @@
+/* ==========================================================================
+   footer / components
+   ========================================================================== */
+
+.footer {
+    background-color: var(--color-black);
+    padding: var(--spacing-md);
+    .wrapper {
+        p {
+            width: 100%;
+            text-align: center;
+            font-size: 0.938rem;
+        }
+    }
+}

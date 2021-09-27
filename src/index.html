@@ -17,7 +17,7 @@
                 class="header"
                 data-component="Header"
                 data-scroll-limit=".1"
-                data-auto-hide="true"
+                data-auto-hide="false"
             >
                 <div class="wrapper">
                     <div class="header__brand">
@@ -59,13 +59,44 @@
                         <span>développement web et design web </span>
                     </h2>
                     <div class="cta__hero">
-                        <button class="button">Voir mes projets</button>
-                        <button class="button button--secondary">
+                        <button
+                            class="button"
+                            onclick="window.location.href='projets.html'"
+                        >
+                            Voir mes projets
+                        </button>
+                        <button
+                            class="button button--secondary"
+                            onclick="window.location.href='a-propos.html'"
+                        >
                             Un peu plus sur moi
                         </button>
                     </div>
                 </div>
             </section>
+            <footer class="footer">
+                <div class="wrapper">
+                    <nav class="nav__footer">
+                        <a class="logo_foot_phone" href="index.html"
+                            ><img src="assets/images/logo.svg" alt=""
+                        /></a>
+                        <ul>
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                        </ul>
+
+                        <a class="logo_foot" href="index.html"
+                            ><img src="assets/images/logo.svg" alt=""
+                        /></a>
+
+                        <ul>
+                            <li><a href="a-propos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <p>© Ricardo Yanez 2021</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

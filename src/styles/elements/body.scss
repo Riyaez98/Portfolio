@@ -3,12 +3,18 @@
    Le body permet d'initialiser les propriétés générales de la page.
    Les éléments de la page vont hérités des propriétés inscrite dans body
    ========================================================================== */
-
 body {
     background: var(--color-bg-primary) no-repeat;
     color: var(--color-white);
     font-family: var(--font-primary);
-    font-size: var(--font-size-content);
+    font-size: var(--font-size-content-laptop-phone);
     line-height: 1.6;
-    height: 3200px;
+    overflow-x: hidden;
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-content-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-content);
+    }
 }

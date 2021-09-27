@@ -14,24 +14,55 @@ h6 {
 }
 
 h1 {
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-h1-phone);
     margin: 0;
     color: var(--color-primary);
     font-weight: 600;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h1-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-h1);
+    }
 }
 
 h2 {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h2-phone);
     font-family: var(--font-secondary);
-    // text-transform: uppercase;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h2-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-h2);
+    }
 }
 
 h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h3-phone);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h3-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-h3);
+    }
 }
 
 h4 {
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h4-phone);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-h4-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-h4);
+    }
 }
 
 h5 {
