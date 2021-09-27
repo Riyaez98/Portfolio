@@ -9,6 +9,7 @@
         <link rel="icon" href="assets/images/favicon.png" />
 
         <script src="scripts/main.js" defer></script>
+        <!-- <script src="scripts/main.js" defer></script> -->
     </head>
 
     <body>
@@ -50,10 +51,12 @@
             </header>
             <section class="hero hero__accueil">
                 <div class="wrapper">
-                    <h1>
-                        Bienvenue au monde de <br />
-                        Ricardo Yanez!
-                    </h1>
+                    <div data-component="Typed" class="typed">
+                        <h1>
+                            Bienvenue au monde de <br />
+                            Ricardo <span class="anim"></span>
+                        </h1>
+                    </div>
                     <h2>
                         Apprenti en
                         <span>développement web et design web </span>
@@ -74,6 +77,80 @@
                     </div>
                 </div>
             </section>
+            <section data-component="Parallax" class="bg_anim">
+                <img
+                    src="assets/images/bg/bg_1.png"
+                    data-speed="-1"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_2.png"
+                    data-speed="5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_3.png"
+                    data-speed="-2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_4.png"
+                    data-speed="6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_5.png"
+                    data-speed="-8"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_6.png"
+                    data-speed="2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_7.png"
+                    data-speed="-4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_8.png"
+                    data-speed="9"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_9.png"
+                    data-speed="-6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_10.png"
+                    data-speed="4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_11.png"
+                    data-speed="-5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_12.png"
+                    data-speed="3"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+            </section>
             <footer class="footer">
                 <div class="wrapper">
                     <nav class="nav__footer">
@@ -86,8 +163,8 @@
                         </ul>
 
                         <a class="logo_foot" href="index.html"
-                            ><img src="assets/images/logo.svg" alt=""
-                        /></a>
+                            ><img src="assets/images/logo.svg" alt="" />
+                        </a>
 
                         <ul>
                             <li><a href="a-propos.html">À propos</a></li>
@@ -97,6 +174,20 @@
                     <p>© Ricardo Yanez 2021</p>
                 </div>
             </footer>
+            <!-- <script type="text/javascript">
+                document.addEventListener("mouseover", parallax);
+                function parallax(e) {
+                    this.querySelectorAll(".layer").forEach((layer) => {
+                        const speed = layer.getAttribute("data-speed");
+
+                        const x = window.innerWidth - e.pageX * speed;
+                        const y = window.innerHeight - e.pageY * speed;
+
+                        layer.style.transform =
+                            "translateX(${x}px) translateY(${y}px)";
+                    });
+                }
+            </script> -->
         </div>
     </body>
 </html>

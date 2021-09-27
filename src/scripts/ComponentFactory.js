@@ -2,6 +2,8 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
+import Typed from './components/TypedCostum';
+import Parallax from './components/Parallax';
 
 export default class ComponentFactory {
   constructor() {
@@ -11,6 +13,8 @@ export default class ComponentFactory {
       Header,
       Modal,
       Scrolly,
+      Typed,
+      Parallax,
     };
     this.init();
   }

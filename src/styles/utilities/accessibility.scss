@@ -8,13 +8,15 @@
     border: 0 !important;
     clip: rect(0 0 0 0) !important;
     clip-path: inset(50%) !important;
-    height: 1px !important;
+    height: 100vh !important;
     margin: -1px !important;
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
     white-space: nowrap !important;
-    width: 1px !important;
+    width: 100vw !important;
+    top: 0;
+    left: 0;
 }
 
 /// Cette classe permet de mettre invisible un élément de la page.
