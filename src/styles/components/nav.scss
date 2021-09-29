@@ -69,6 +69,16 @@
         }
     }
 
+    .current-page {
+        transform: scale(1.15);
+        a {
+            color: var(--color-secondary);
+            font-weight: 700;
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
     @media screen and (min-width: $breakpoint-lg) {
         background: none;
         padding-top: 0;
