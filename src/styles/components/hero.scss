@@ -4,15 +4,15 @@
 
 .hero {
     padding: 50px 0;
-}
-
-.hero__accueil {
-    .wrapper {
-        padding: 100px 20px;
-    }
     h1 {
         text-align: center;
         margin-bottom: 1.875rem;
+    }
+}
+
+.hero--accueil {
+    .wrapper {
+        padding: 100px 20px;
     }
     h2 {
         font-size: var(--font-size-content-phone);
@@ -47,6 +47,31 @@
             .button {
                 margin: 0 25px;
             }
+        }
+    }
+}
+
+.hero--propos {
+    padding-bottom: 0;
+    background-color: rgba(#000, 0.5);
+    h1 {
+        margin-top: var(--spacing-lg);
+        span {
+            font-family: var(--font-tertiary);
+            color: var(--color-secondary);
+            font-weight: 700;
+        }
+    }
+    .hero__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .hero__media {
+            width: 30%;
+        }
+        .hero__text {
+            text-align: right;
+            width: 50%;
         }
     }
 }

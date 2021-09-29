@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ricardo Yanez - Portfolio</title>
+        <title>Portfolio - Ricardo Yanez</title>
 
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="icon" href="assets/images/favicon.png" />
 
         <script src="scripts/main.js" defer></script>
-        <!-- <script src="scripts/main.js" defer></script> -->
     </head>
 
     <body>
@@ -18,7 +17,7 @@
                 class="header"
                 data-component="Header"
                 data-scroll-limit=".1"
-                data-auto-hide="false"
+                data-auto-hide="true"
             >
                 <div class="wrapper">
                     <div class="header__brand">
@@ -49,7 +48,7 @@
                     </button>
                 </div>
             </header>
-            <section class="hero hero__accueil">
+            <section class="hero hero--accueil">
                 <div class="wrapper">
                     <div data-component="Typed" class="typed">
                         <h1>
@@ -174,20 +173,6 @@
                     <p>© Ricardo Yanez 2021</p>
                 </div>
             </footer>
-            <!-- <script type="text/javascript">
-                document.addEventListener("mouseover", parallax);
-                function parallax(e) {
-                    this.querySelectorAll(".layer").forEach((layer) => {
-                        const speed = layer.getAttribute("data-speed");
-
-                        const x = window.innerWidth - e.pageX * speed;
-                        const y = window.innerHeight - e.pageY * speed;
-
-                        layer.style.transform =
-                            "translateX(${x}px) translateY(${y}px)";
-                    });
-                }
-            </script> -->
         </div>
     </body>
 </html>
