@@ -1,0 +1,20 @@
+<svg width="168" height="118" viewBox="0 0 168 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="4" width="160" height="110" rx="10" stroke="#E19B19" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M4 94H163" stroke="#E19B19" stroke-width="4"/>
+<path d="M24 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M44 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M64 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M84 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M104 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M124 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M144 114V94" stroke="#E19B19" stroke-width="4"/>
+<path d="M4 24H163" stroke="#E19B19" stroke-width="4"/>
+<path d="M24 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M44 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M64 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M84 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M104 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M124 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M144 24V4" stroke="#E19B19" stroke-width="4"/>
+<path d="M105.5 56.4019C107.5 57.5566 107.5 60.4434 105.5 61.5981L75.5 78.9186C73.5 80.0733 71 78.6299 71 76.3205L71 41.6795C71 39.3701 73.5 37.9267 75.5 39.0814L105.5 56.4019Z" stroke="#E19B19" stroke-width="5" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   flex--interests / 
+   ========================================================================== */
+
+.flex--interests {
+    display: flex;
+    flex-direction: column;
+    .card--interests:nth-child(4) {
+        margin: 0 !important;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        .card--interests {
+            margin: 0 25px;
+            width: 23%;
+        }
+    }
+}

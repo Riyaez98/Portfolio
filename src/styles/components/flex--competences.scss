@@ -1,0 +1,30 @@
+/* ==========================================================================
+   competences / components
+   ========================================================================== */
+
+.flex--competences {
+    --space-between-cards-x: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .card--competence:nth-child(2) {
+        align-self: center;
+    }
+    .card--competence:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        --space-between-cards-y: 100px;
+        .card--competence:nth-child(1) {
+            margin-bottom: calc(var(--space-between-cards-y) * 2);
+        }
+        .card--competence:nth-child(2) {
+            margin: var(--space-between-cards-y) 0;
+        }
+        .card--competence:nth-child(3) {
+            margin-top: calc(var(--space-between-cards-y) * 2);
+        }
+    }
+}

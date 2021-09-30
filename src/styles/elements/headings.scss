@@ -11,7 +11,7 @@ h6 {
     font-family: var(--font-secondary);
     line-height: 1;
     margin: 0;
-    // font-weight: medium;
+    text-align: center;
 }
 
 h1 {
@@ -31,8 +31,10 @@ h1 {
 h2 {
     font-size: var(--font-size-h2-phone);
     font-family: var(--font-secondary);
+    margin-bottom: 25px;
 
     @media screen and (min-width: $breakpoint-sm) {
+        margin-bottom: 50px;
         font-size: var(--font-size-h2-laptop);
     }
     font-weight: 600;
