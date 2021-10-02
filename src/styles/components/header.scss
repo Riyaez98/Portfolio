@@ -5,13 +5,13 @@
 header {
     background-color: var(--color-bg-secondary);
     padding: var(--spacing-md);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 20;
     transform: translateY(0);
     transition: all 0.4s $ease-in-out-quad;
-    // overflow-x: hidden;
 
     .wrapper {
         display: flex;
