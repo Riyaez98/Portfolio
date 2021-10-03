@@ -2,6 +2,7 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
+import Form from './components/Form';
 import Typed from './components/TypedCostum';
 import Parallax from './components/Parallax';
 
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Header,
       Modal,
       Scrolly,
+      Form,
       Typed,
       Parallax,
     };

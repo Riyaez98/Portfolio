@@ -22,3 +22,22 @@
         margin: 0;
     }
 }
+.section--contact {
+    max-width: 1750px;
+    margin: 0 auto;
+    h4,
+    h5 {
+        text-align: left;
+    }
+    h5 {
+        margin-bottom: 20px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin: 0 10px;
+        }
+    }
+}

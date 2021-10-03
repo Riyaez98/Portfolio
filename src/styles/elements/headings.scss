@@ -68,7 +68,16 @@ h4 {
 }
 
 h5 {
-    font-size: var(--font-size-h5);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-content-phone);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-content-laptop);
+    }
+    font-weight: 600;
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: var(--font-size-content);
+    }
 }
 
 h6 {

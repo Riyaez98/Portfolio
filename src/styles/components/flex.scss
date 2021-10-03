@@ -1,0 +1,74 @@
+/* ==========================================================================
+   flex / components
+========================================================================== */
+
+.flex {
+    display: flex;
+}
+
+.flex--interests {
+    flex-direction: column;
+    .card--interests:nth-child(4) {
+        margin: 0;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        .card--interests {
+            margin: 0 25px;
+            width: 23%;
+        }
+        .card--interests:nth-child(4) {
+            margin: 0 25px;
+        }
+    }
+}
+.flex--competences {
+    --space-between-cards-x: 60px;
+    flex-direction: column;
+    justify-content: center;
+    .card--competence:nth-child(2) {
+        align-self: center;
+    }
+    .card--competence:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        --space-between-cards-y: 100px;
+        .card--competence:nth-child(1) {
+            margin-bottom: calc(var(--space-between-cards-y) * 2);
+        }
+        .card--competence:nth-child(2) {
+            margin: var(--space-between-cards-y) 0;
+        }
+        .card--competence:nth-child(3) {
+            margin-top: calc(var(--space-between-cards-y) * 2);
+        }
+    }
+}
+.flex--card-projet {
+    flex-direction: column;
+    justify-content: flex-end;
+    p {
+        margin: 0 0 25px;
+    }
+}
+
+.flex--contact {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .contact__info,
+    .contact__form {
+        justify-content: space-around;
+        width: 95%;
+        @media screen and (min-width: $breakpoint-md) {
+            width: 47%;
+        }
+    }
+}
+
+.flex--button {
+    justify-content: center;
+    margin-bottom: 50px;
+}

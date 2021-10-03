@@ -48,32 +48,151 @@
                     </button>
                 </div>
             </header>
-            <section class="hero hero__accueil">
+            <section class="hero hero--contact">
                 <div class="wrapper">
-                    <div data-component="Typed" class="typed">
-                        <h1>
-                            Bienvenue au monde de <br />
-                            Ricardo <span class="anim"></span>
-                        </h1>
+                    <h1>Contact</h1>
+                </div>
+            </section>
+            <section class="section--contact">
+                <div class="flex flex--contact">
+                    <div class="section contact__info">
+                        <h4>
+                            Besoin de plus d'<span class="txt--special">
+                                information?
+                            </span>
+                        </h4>
+                        <p>
+                            N’hesitez pas à me contacter si vous avez des
+                            <span class="txt--special">questions,</span> si vous
+                            voulez des
+                            <span class="txt--special">clarifications</span> ou
+                            même si vous voulez m’entendre de
+                            <span class="txt--special">vive voix!</span> Vous
+                            pouvez le faire en remplissant le
+                            <span class="txt--special">formulaire</span> ou vous
+                            pouvez me contacter au
+                            <a href="tel:514-808-9181">
+                                <span class="txt--special">
+                                    (514) 808-9181.
+                                </span>
+                            </a>
+                            Au plaisir de vous parler.
+                        </p>
+                        <h5>
+                            Visitez mes
+                            <span class="txt--special">reseaux sociaux :</span>
+                        </h5>
+                        <ul class="flex">
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/ryanez98/"
+                                    target="_blank"
+                                    ><svg class="icon icon--lg">
+                                        <use
+                                            xlink:href="#icon-linkedin-blck"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/Riyaez98"
+                                    target="_blank"
+                                >
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-github-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.behance.net/ricardoyanezg"
+                                    target="_blank"
+                                >
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-behance-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <h2>
-                        Apprenti en
-                        <span>développement web et design web </span>
-                    </h2>
-                    <div class="cta__hero">
-                        <button
-                            class="button"
-                            onclick="window.location.href='projets.html'"
+                    <div class="section contact__form">
+                        <form
+                            action=""
+                            class="form"
+                            autocomplete="off"
+                            data-component="Form"
                         >
-                            Voir mes projets
-                        </button>
-                        <button
-                            class="button button--secondary"
-                            onclick="window.location.href='a-propos.html'"
-                        >
-                            Un peu plus sur moi
-                        </button>
+                            <div class="form__body">
+                                <fieldset class="grid grid--contact">
+                                    <div class="input">
+                                        <labe class="input__label" for="name"
+                                            >Votre nom</labe
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            required
+                                        />
+                                        <p class="message__error">**Erreur**</p>
+                                    </div>
+
+                                    <div class="input">
+                                        <label class="input__label" for="email"
+                                            >Votre courriel</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            required
+                                        />
+                                        <p class="message__error">**Erreur**</p>
+                                    </div>
+
+                                    <div
+                                        class="input textarea u-grid-fullwidth"
+                                    >
+                                        <label
+                                            class="input__label"
+                                            for="comment"
+                                            >Commentaire</label
+                                        >
+                                        <textarea
+                                            class="input__element"
+                                            maxlength="500"
+                                            name="comment"
+                                            id="comment"
+                                        ></textarea>
+                                    </div>
+                                </fieldset>
+                                <footer class="form__footer">
+                                    <button class="button">Envoyer</button>
+                                </footer>
+                            </div>
+
+                            <div class="form__confirmation">
+                                <h2>Merci</h2>
+                                <p>Votre formulaire a bien été envoyé</p>
+                            </div>
+                        </form>
                     </div>
+                </div>
+                <div class="flex flex--button">
+                    <button class="button--download">
+                        <a
+                            href="assets/downloads/yanez_ricardo_cv.pdf"
+                            download="yanez_ricardo_cv"
+                        >
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-download"></use>
+                            </svg>
+                            Telechargez mon cv
+                        </a>
+                    </button>
                 </div>
             </section>
             <section data-component="Parallax" class="bg_anim">
