@@ -1,0 +1,12 @@
+/* ==========================================================================
+   flex--card-projet / component
+   ========================================================================== */
+
+.flex--card-projet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p {
+        margin: 0 0 25px;
+    }
+}

@@ -49,3 +49,124 @@
         text-align: center;
     }
 }
+.card--projet {
+    position: relative;
+    border-radius: 10px;
+    border: solid var(--color-white) 3px;
+    h2 {
+        font-size: 2.5rem;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: 3.125rem;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: 4.063rem;
+        }
+    }
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: 1.563rem;
+        }
+    }
+    img {
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        filter: blur(2.5px);
+    }
+    a {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .img--voir-plus {
+        position: absolute;
+        bottom: 1%;
+        right: -7.5%;
+        filter: blur(0);
+        transform: rotate(0deg);
+        width: 25%;
+        opacity: 0;
+        transition: all 0.4s $ease-in-cubic;
+    }
+    &:hover {
+        .img--voir-plus {
+            transition: all 0.4s $ease-in-cubic;
+            transform: rotate(-45deg);
+            opacity: 1;
+        }
+    }
+}
+.card--projet-food {
+    &:hover {
+        img:not(.img--voir-plus) {
+            content: url('../assets/images/hover-food.png');
+            filter: blur(0);
+        }
+        h2 {
+            font-family: var(--font-food);
+            color: var(--color-secondary);
+            font-weight: normal;
+        }
+    }
+}
+.card--projet-recettes {
+    &:hover {
+        img:not(.img--voir-plus) {
+            content: url('../assets/images/hover-recettes.png');
+            filter: blur(0);
+        }
+        h2 {
+            font-family: var(--font-recettes);
+            color: var(--color-recettes);
+            font-weight: normal;
+        }
+    }
+}
+.card--projet-courtier {
+    &:hover {
+        img:not(.img--voir-plus) {
+            content: url('../assets/images/hover-courtier.png');
+            filter: blur(0);
+        }
+        h2 {
+            font-family: var(--font-courtier);
+            font-size: 3.75rem;
+            color: var(--color-recettes);
+            font-weight: normal;
+        }
+    }
+}
+.card--projet-planete {
+    &:hover {
+        img:not(.img--voir-plus) {
+            content: url('../assets/images/hover-planete.png');
+            filter: blur(0);
+        }
+        h2 {
+            font-family: var(--font-planet);
+            font-size: 2.5rem;
+            color: var(--color-planete);
+            font-weight: normal;
+        }
+    }
+}
+.card--projet-video {
+    &:hover {
+        img:not(.img--voir-plus) {
+            content: url('../assets/images/hover-video.png');
+            filter: blur(0);
+        }
+        h2 {
+            font-family: var(--font-video);
+            font-weight: normal;
+        }
+    }
+}

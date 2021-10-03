@@ -1,0 +1,29 @@
+/* ==========================================================================
+   grid / component
+   ========================================================================== */
+
+.grid {
+    display: grid;
+}
+
+.grid--projets {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    @media screen and (min-width: $breakpoint-sm) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 80px;
+        .card--projet:nth-child(odd) {
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+        .card--projet:nth-child(even) {
+            grid-column-start: 3;
+            grid-column-end: span 2;
+        }
+        .card--projet:last-child {
+            grid-column-start: 2;
+            grid-column-end: span 2;
+        }
+    }
+}
