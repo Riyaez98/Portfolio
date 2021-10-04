@@ -73,22 +73,32 @@
     margin-bottom: 50px;
 }
 
-.flex--hero-food{
+.flex--hero-projet{
+    flex-direction: column;
     justify-content: space-around;
-    .hero__media{
-        width: 45%;
-        img{
-            display: block;
+    align-items: center;
+    @media screen and (min-width: 850px) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
+
+.flex--cta-projet{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    .button{
+        align-self: center;
+    }
+    .button a{
+        &:hover{
+            text-decoration: none;
         }
     }
-    .hero__content{
-        width: 50%;
-        h3{
-            text-align: left;
-        }
-        .description{
-
-        }
-
+    @media screen and (min-width: 450px) {
+    flex-direction: row;
+    align-items: center;
     }
 }
