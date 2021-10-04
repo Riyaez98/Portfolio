@@ -38,6 +38,15 @@
         list-style: none;
         li {
             margin: 0 10px;
+            svg{
+                transform: rotate(0deg);
+                transition: all .4s $ease-in-out-cubic;
+                &:hover{
+                    transform: rotate(360deg);
+                    fill: var(--color-secondary);
+                    transition: all .4s $ease-in-out-cubic;
+                }
+            }
         }
     }
 }

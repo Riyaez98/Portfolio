@@ -101,7 +101,15 @@
         margin: 0;
     }
 }
-.hero--food{
+.hero--projet{
+    h1{
+        margin-bottom: 50px;
+        
+        [data-page='planete'] & {
+
+            margin-bottom: 75px;
+        }
+    }
     .hero__media{
         width: 90%;
         img{
