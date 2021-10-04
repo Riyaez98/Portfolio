@@ -72,3 +72,23 @@
     justify-content: center;
     margin-bottom: 50px;
 }
+
+.flex--hero-food{
+    justify-content: space-around;
+    .hero__media{
+        width: 45%;
+        img{
+            display: block;
+        }
+    }
+    .hero__content{
+        width: 50%;
+        h3{
+            text-align: left;
+        }
+        .description{
+
+        }
+
+    }
+}

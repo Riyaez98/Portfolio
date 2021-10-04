@@ -1,1 +1,168 @@
 <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Ricardo Yanez</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="assets/images/favicon.png" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="site-container" data-component="Scrolly" data-page="food">
+            <header
+                class="header"
+                data-component="Header"
+                data-scroll-limit=".1"
+                data-auto-hide="true"
+            >
+                <div class="wrapper">
+                    <div class="header__brand">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="Logo" />
+                        </a>
+                    </div>
+                    <nav class="nav--primary">
+                        <ul>
+                            <li class="nav__item current-page">
+                                <a href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="projets.html">Projets</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="a-propos.html">À propos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <section class="hero hero--food">
+                <div class="wrapper">
+                    <h1 data-scrolly="scaleIn">Food-a-palooza
+                    </h1>
+                    <div class="flex flex--hero-food">
+                        <div class="hero__media">
+                            <img src="assets/images/media_hero_food.png" alt="Mockup Food-a-palooza">
+                        </div>
+                        <div class="hero__content">
+                            <h3 class="txt--special">
+                                C'est quoi?
+                            </h3>
+                            <p class="description">Design et intégration web d’un <span class="txt--special"> site événementiel fictif,</span> fait dans le cadre des cours de design d’expérience et conception web lors de ma quatrième session du programme</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section data-component="Parallax" class="bg_anim">
+                <img
+                    src="assets/images/bg/bg_1.png"
+                    data-speed="-1"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_2.png"
+                    data-speed="5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_3.png"
+                    data-speed="-2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_4.png"
+                    data-speed="6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_5.png"
+                    data-speed="-8"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_6.png"
+                    data-speed="2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_7.png"
+                    data-speed="-4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_8.png"
+                    data-speed="9"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_9.png"
+                    data-speed="-6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_10.png"
+                    data-speed="4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_11.png"
+                    data-speed="-5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_12.png"
+                    data-speed="3"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+            </section>
+            <footer class="footer">
+                <div class="wrapper">
+                    <nav class="nav__footer">
+                        <a class="logo_foot_phone" href="index.html"
+                            ><img src="assets/images/logo.svg" alt=""
+                        /></a>
+                        <ul>
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                        </ul>
+
+                        <a class="logo_foot" href="index.html"
+                            ><img src="assets/images/logo.svg" alt="" />
+                        </a>
+
+                        <ul>
+                            <li><a href="a-propos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <p>© Ricardo Yanez 2021</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

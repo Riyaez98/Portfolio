@@ -48,13 +48,11 @@
                 margin: 0 25px;
             }
         }
-        
-        @media screen and (min-width: $breakpoint-md) {
-            display: flex;
-            align-items: center;
-            height: calc(100vh - 130px);
-            //push again test
-        }
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 130px);
     }
 }
 
@@ -101,5 +99,13 @@
 .hero--contact {
     h1 {
         margin: 0;
+    }
+}
+.hero--food{
+    .hero__media{
+        
+    }
+    .hero__content{
+
     }
 }
