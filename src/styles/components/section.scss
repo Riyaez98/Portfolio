@@ -50,3 +50,18 @@
         }
     }
 }
+
+.section--documentation,
+.section--varaibles {
+    p {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        p {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}

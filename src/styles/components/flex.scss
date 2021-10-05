@@ -153,3 +153,37 @@
         }
     }
 }
+
+.flex--doc {
+    flex-direction: column;
+    align-items: center;
+    div {
+        margin-top: 25px;
+        max-width: 80%;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: space-around;
+        div {
+            margin-top: 0;
+            max-width: 47%;
+        }
+    }
+}
+
+.flex--var {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img {
+        width: 47%;
+        margin: 0 0 25px;
+        object-fit: contain;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        img {
+            width: 31%;
+            margin: 50px 0 0;
+        }
+    }
+}

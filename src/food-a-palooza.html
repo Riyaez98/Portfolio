@@ -52,13 +52,13 @@
                 <div class="wrapper">
                     <h1 data-scrolly="scaleIn">Food-a-palooza</h1>
                     <div class="flex flex--hero-projet">
-                        <div class="hero__media">
+                        <div class="hero__media" data-scrolly="fromLeft">
                             <img
                                 src="assets/images/media_hero_food.png"
                                 alt="Mockup Food-a-palooza"
                             />
                         </div>
-                        <div class="hero__content">
+                        <div class="hero__content" data-scrolly="fromRight">
                             <h3 class="txt--special">C'est quoi?</h3>
                             <p class="description">
                                 Design et intégration web d’un
@@ -74,8 +74,12 @@
                                     <h3 class="txt--special">Type de projet</h3>
                                     <p>Ce projet est une projet scolaire.</p>
                                 </div>
-                                <button class="button">
-                                    <a href="">Voir le site</a>
+                                <button class="button" data-scrolly="fromRight">
+                                    <a
+                                        href="https://food-a-palooza.ryanez.ca/"
+                                        target="_blank"
+                                        >Voir le site</a
+                                    >
                                 </button>
                             </div>
                         </div>
@@ -85,13 +89,14 @@
             <section class="section">
                 <div class="wrapper flex flex--food-responsive">
                     <div class="food-responsive--description">
-                        <h2>Site responsive</h2>
+                        <h2 data-scrolly="scaleIn">Site responsive</h2>
                         <div class="flex flex-responsive--description">
                             <img
                                 src="assets/images/responsive_mockup_food.png"
                                 alt="Image d'un mockup du site responsive"
+                                data-scrolly="fromLeft"
                             />
-                            <p>
+                            <p data-scrolly="scaleIn">
                                 Dans ce projet j’ai utilisé des techniques pour
                                 créer un
                                 <span class="txt--special">site responsif</span>
@@ -103,7 +108,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="food-responsive--code">
+                    <div class="food-responsive--code" data-scrolly="fromRight">
                         <img
                             src="assets/images/code_responsive_food.png"
                             alt="Image du code pour le responsive"
@@ -111,6 +116,67 @@
                     </div>
                 </div>
             </section>
+            <section class="section section--documentation">
+                <div class="wrapper">
+                    <h2 data-scrolly="scaleIn">Documentation</h2>
+                    <p data-scrolly="scaleIn">
+                        Tout au long de l’intégration de ce site, j’ai fait de
+                        la
+                        <span class="txt--special">documentation,</span> tant
+                        pour les
+                        <span class="txt--special">utilisateurs</span> que pour
+                        les <span class="txt--special">développeurs.</span>
+                    </p>
+                    <div class="flex flex--doc">
+                        <div class="doc--dev" data-scrolly="fromLeft">
+                            <h3>Développeurs</h3>
+                            <img
+                                src="assets/images/code_comment_food.png"
+                                alt="Image documentation dev"
+                            />
+                        </div>
+                        <div class="doc--user" data-scrolly="fromRight">
+                            <h3>Utilisateurs</h3>
+                            <img
+                                src="assets/images/code_documentation_food.png"
+                                alt="Image documentation utilisateur"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--varaibles">
+                <div class="wrapper">
+                    <h2 data-scrolly="scaleIn">Variables</h2>
+                    <p data-scrolly="scaleIn">
+                        Dans ce projet j’ai utilisé des
+                        <span class="txt--special">variables globales</span>
+                        (:root{...}) pour rendre le
+                        <span class="txt--special">codage</span> plus
+                        <span class="txt--special">efficace</span> et faciliter
+                        les futurs changements du
+                        <span class="txt--special">style.</span>
+                    </p>
+                    <div class="flex flex--var">
+                        <img
+                            src="assets/images/code_variable_food1.png"
+                            alt="Exemple de variables"
+                            data-scrolly="fromBottom"
+                        />
+                        <img
+                            src="assets/images/code_variable_food2.png"
+                            alt="Exemple de variables"
+                            data-scrolly="fromBottom"
+                        />
+                        <img
+                            src="assets/images/code_variable_food3.png"
+                            alt="Exemple de variables"
+                            data-scrolly="fromBottom"
+                        />
+                    </div>
+                </div>
+            </section>
+
             <section data-component="Parallax" class="bg_anim">
                 <img
                     src="assets/images/bg/bg_1.png"

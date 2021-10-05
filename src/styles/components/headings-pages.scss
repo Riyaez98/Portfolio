@@ -1,7 +1,8 @@
 body {
     [data-page='food'] {
         h1,
-        h2 {
+        h2,
+        h3 {
             font-family: var(--font-food);
             font-weight: 400;
             color: var(--color-secondary);
@@ -11,10 +12,9 @@ body {
         h2 {
             @media screen and (min-width: $breakpoint-sm) {
                 margin-bottom: 50px;
-                font-size: var(--font-size-h2-laptop);
+                font-size: 3.75rem;
             }
             @media screen and (min-width: $breakpoint-md) {
-                margin-bottom: 50px;
                 font-size: var(--font-size-h2-laptop);
             }
             @media screen and (min-width: $breakpoint-lg) {
