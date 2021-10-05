@@ -32,12 +32,12 @@ h2 {
     font-size: var(--font-size-h2-phone);
     font-family: var(--font-secondary);
     margin-bottom: 25px;
+    font-weight: 600;
 
     @media screen and (min-width: $breakpoint-sm) {
         margin-bottom: 50px;
         font-size: var(--font-size-h2-laptop);
     }
-    font-weight: 600;
     @media screen and (min-width: $breakpoint-lg) {
         font-size: var(--font-size-h2);
     }

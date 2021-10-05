@@ -73,7 +73,7 @@
     margin-bottom: 50px;
 }
 
-.flex--hero-projet{
+.flex--hero-projet {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -81,24 +81,75 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-
     }
 }
 
-.flex--cta-projet{
+.flex--cta-projet {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    .button{
+    .button {
         align-self: center;
     }
-    .button a{
-        &:hover{
+    .button a {
+        &:hover {
             text-decoration: none;
         }
     }
     @media screen and (min-width: 450px) {
-    flex-direction: row;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.flex--food-responsive {
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    .food-responsive--description,
+    .food-responsive--code {
+        width: 75%;
+    }
+    .food-responsive--code {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        align-items: flex-end;
+        .food-responsive--description,
+        .food-responsive--code {
+            width: 48%;
+        }
+    }
+}
+.flex-responsive--description {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    p,
+    img {
+        width: 98%;
+    }
+    p {
+        text-align: center;
+    }
+    img {
+        max-height: 500px;
+        object-fit: contain;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        margin-bottom: 0;
+        p,
+        img {
+            width: 47%;
+        }
+        p {
+            text-align: left;
+        }
     }
 }

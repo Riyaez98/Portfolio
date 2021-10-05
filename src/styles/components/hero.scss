@@ -101,39 +101,35 @@
         margin: 0;
     }
 }
-.hero--projet{
-    h1{
+.hero--projet {
+    h1 {
         margin-bottom: 50px;
-        
-        [data-page='planete'] & {
 
+        [data-page='planete'] & {
             margin-bottom: 75px;
         }
     }
-    .hero__media{
+    .hero__media {
         width: 90%;
-        img{
+        img {
             width: 100%;
             display: block;
         }
     }
-    .hero__content{
+    .hero__content {
         width: 85%;
         margin-top: 25px;
-        h3{
+        h3 {
             text-align: left;
         }
-
     }
     @media screen and (min-width: 850px) {
-        .hero__media{
+        .hero__media {
             width: 45%;
         }
-        .hero__content{
+        .hero__content {
             width: 50%;
             margin-top: 0;
-    
         }
-
     }
 }
