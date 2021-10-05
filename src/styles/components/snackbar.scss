@@ -1,0 +1,48 @@
+/* ==========================================================================
+   snackbar / component
+   ========================================================================== */
+
+.snackbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-bg-secondary);
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 0.4s $ease-in-out-back;
+    &.visible {
+        opacity: 1;
+    }
+    .wrapper {
+        padding: 25px 10px;
+        display: flex;
+        justify-content: space-between;
+        a:hover {
+            color: inherit;
+            text-decoration: underline;
+        }
+        button {
+            border: none;
+            background-color: inherit;
+        }
+        svg {
+            stroke: var(--color-white);
+            &:hover {
+                stroke: var(--color-secondary);
+                transition: all 0.4s $ease-in-out-back;
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+    .btn-close {
+        cursor: pointer;
+    }
+    .snackbar-is-hidden & {
+        transform: translateY(100%);
+        background-color: var(--color-black);
+    }
+}

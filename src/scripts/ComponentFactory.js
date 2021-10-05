@@ -5,6 +5,7 @@ import Scrolly from './components/Scrolly';
 import Form from './components/Form';
 import Typed from './components/TypedCostum';
 import Parallax from './components/Parallax';
+import Snackbar from './components/Snackbar';
 
 export default class ComponentFactory {
   constructor() {
@@ -17,6 +18,7 @@ export default class ComponentFactory {
       Form,
       Typed,
       Parallax,
+      Snackbar,
     };
     this.init();
   }

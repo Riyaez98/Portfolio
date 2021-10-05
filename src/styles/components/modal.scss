@@ -14,14 +14,14 @@
     opacity: 0;
     overflow: hidden;
     transform: translateY(-100%);
-    transition: opacity var(--modal-close-speed) 0.4s $ease-out-expo,
+    transition: opacity var(--modal-close-speed) 0.4s $ease-in-out-back,
         transform 0s var(--modal-close-speed);
     z-index: 20;
 
     .modal-is-active & {
         opacity: 1;
         transform: translateY(0);
-        transition: opacity var(--modal-close-speed) $ease-out-expo,
+        transition: opacity var(--modal-close-speed) $ease-in-out-back,
             transform 0s;
     }
 }
@@ -39,14 +39,14 @@
     width: 80vw;
     opacity: 0;
     transform: translateY(100%);
-    transition: all 0.4s $ease-in-expo;
+    transition: all 0.4s $ease-in-out-back;
     position: relative;
     height: 80vh;
     z-index: 1;
 
     .modal-is-active & {
         opacity: 1;
-        transition: all 0.4s 0.2s $ease-out-expo;
+        transition: all 0.4s 0.2s $ease-in-out-back;
         transform: translateY(0);
     }
 }
@@ -83,7 +83,7 @@
         top: 0;
         margin: auto;
         position: absolute;
-        transition: transform 0.3s $ease-out-expo;
+        transition: transform 0.3s $ease-in-out-back;
         width: 80%;
     }
 
