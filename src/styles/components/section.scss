@@ -73,10 +73,18 @@
     }
 }
 .section--maquettes {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     p {
         width: 80%;
         text-align: center;
         margin: 25px auto;
+    }
+    .video {
+        width: 98%;
     }
     @media screen and (min-width: $breakpoint-sm) {
         p {

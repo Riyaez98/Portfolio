@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Notre belle planete - Ricardo Yanez</title>
+        <title>A la croisee des chemins - Ricardo Yanez</title>
 
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="icon" href="assets/images/favicon.png" />
@@ -50,25 +50,31 @@
             </header>
             <section class="hero hero--projet">
                 <div class="wrapper">
-                    <h1 data-scrolly="scaleIn">Notre belle planete</h1>
+                    <h1 data-scrolly="scaleIn">A la croisee des chemins</h1>
                     <div class="flex flex--hero-projet">
                         <div class="hero__media" data-scrolly="fromLeft">
                             <img
-                                src="assets/images/media_hero_planete.png"
+                                src="assets/images/video_gif.gif"
                                 alt="Mockup projet planete"
                             />
                         </div>
                         <div class="hero__content" data-scrolly="fromRight">
                             <h3 class="txt--special">C'est quoi?</h3>
                             <p class="description">
-                                Le but de ce projet était de creer le
-                                <span class="txt--special">design</span> d’un
-                                site web, visant à
-                                <span class="txt--special">sensibiliser</span>
-                                les 15-25 ans sur un
-                                <span class="txt--special">enjeu social</span>
-                                qui présente des risques pour la société et son
-                                avenir.
+                                Le but de ce projet était de
+                                <span class="txt--special"
+                                    >créer une vidéo</span
+                                >
+                                sur after effects en utilisant au moins
+                                <span class="txt--special">3 techniques</span>
+                                différentes. On avait un titre à choisir et on
+                                inventait une histoire à partir de ce titre.
+                                <br />
+                                <span class="txt--special"
+                                    >Techniques utilisées:
+                                </span>
+                                Effets de pluie, caméra 3D, “rigging” de
+                                personnages et “CC Star Burst”.
                             </p>
                             <div class="flex flex--cta-projet">
                                 <div class="type-projet">
@@ -78,6 +84,7 @@
                                 <button class="button" data-scrolly="fromRight">
                                     <a
                                         href="assets/downloads/scenarimage_a-la-croisee-des-chemins.pdf"
+                                        download="scenarimage_a-la-croisee-des-chemins"
                                         >Voir le scénarimage</a
                                     >
                                 </button>
@@ -89,39 +96,40 @@
             <section class="section .section--concept">
                 <div class="wrapper flex flex--planete-concept">
                     <div class="concept--content" data-scrolly="fromLeft">
-                        <h2 data-scrolly="scaleIn">le concept</h2>
+                        <h2 data-scrolly="scaleIn">L’histoire</h2>
                         <p data-scrolly="scaleIn">
-                            Notre projet visait à sensibiliser notre public aux
-                            <span class="txt--special"
-                                >enjeux environnementaux,</span
-                            >
-                            tels que la déforestation, la pollution de l'eau,
-                            les gaz à effet de serre et l'élevage d’animaux. De
-                            plus, on leur propose des
-                            <span class="txt--special">solutions</span> et des
-                            <span class="txt--special">ressources</span> telles
-                            que des liens pour faire des dons ou signer des
-                            pétitions.
+                            Dans ma
+                            <span class="txt--special">création</span> nous
+                            suivons un astronaute arrivant sur une
+                            <span class="txt--special">nouvelle</span> planète
+                            pour la coloniser. En arrivant, il réalise qu’il
+                            <span class="txt--special">n’est pas le seul</span>
+                            avec cette mission. De plus, ça ne sert à rien de se
+                            batailler avec l’inconnu, car il y a
+                            <span class="txt--special">d’autres surprises</span>
+                            qui les attendent.
                         </p>
                     </div>
                     <div class="concept--media" data-scrolly="fromRight">
-                        <img src="assets/images/planete.png" alt="" />
+                        <img
+                            class="img--astro"
+                            src="assets/images/Astronaute.svg"
+                            alt=""
+                        />
                     </div>
                 </div>
             </section>
             <section class="section section--maquettes">
                 <div class="wrapper">
-                    <h2 data-scrolly="fromTop">Evolution des maquettes</h2>
-                    <p data-scrolly="fromTop">
-                        Petite comparaison entre les maquettes en mode
-                        <span class="txt--special">wireframe</span> et les
-                        maquettes <span class="txt--special">finales.</span>
-                    </p>
-                    <img
-                        data-scrolly="scaleIn"
-                        src="assets/images/maquettes_planete.gif"
-                        alt=""
-                    />
+                    <h2 data-scrolly="fromTop">Resultat final</h2>
+                    <video class="video" controls>
+                        <source
+                            src="assets/images/video.mp4"
+                            type="video/mp4"
+                        />
+                        <!-- <source src="movie.ogg" type="video/ogg" /> -->
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </section>
             <section data-component="Parallax" class="bg_anim">
@@ -221,6 +229,28 @@
                     <p>© Ricardo Yanez 2021</p>
                 </div>
             </footer>
+            <div
+                class="snackbar"
+                data-component="Snackbar"
+                data-auto-hide="true"
+                data-scroll-limit="0.2"
+                data-delay="750"
+                data-id="1"
+            >
+                <div class="wrapper">
+                    <div class="snackbar__content">
+                        <p>
+                            Attention! Les fautes de français dans les titres
+                            sont volontaires
+                        </p>
+                    </div>
+                    <button class="btn-close js-close">
+                        <svg class="icon icon--md icon--stroke">
+                            <use xlink:href="#icon-exit"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

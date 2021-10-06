@@ -203,6 +203,9 @@
             height: 100%;
             object-fit: cover;
         }
+        .img--astro {
+            transform: scaleX(-1);
+        }
     }
     p {
         text-align: center;

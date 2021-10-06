@@ -56,6 +56,11 @@ body {
         }
     }
     [data-page='video'] {
+        .hero__media {
+            img {
+                max-height: 500px;
+            }
+        }
         h1,
         h2,
         h3 {
