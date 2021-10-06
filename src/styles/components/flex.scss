@@ -187,3 +187,37 @@
         }
     }
 }
+
+.flex--planete-concept {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .concept--media,
+    .concept--content {
+        width: 75%;
+    }
+    .concept--media {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        text-align: center;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        .concept--content {
+            width: 55%;
+            text-align: left;
+        }
+        .concept--media {
+            width: 40%;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}

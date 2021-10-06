@@ -1,1 +1,248 @@
 <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notre belle planete - Ricardo Yanez</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="assets/images/favicon.png" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div
+            class="site-container"
+            data-component="Scrolly"
+            data-page="planete"
+        >
+            <header
+                class="header"
+                data-component="Header"
+                data-scroll-limit=".1"
+                data-auto-hide="true"
+            >
+                <div class="wrapper">
+                    <div class="header__brand">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="Logo" />
+                        </a>
+                    </div>
+                    <nav class="nav--primary">
+                        <ul>
+                            <li class="nav__item">
+                                <a href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="projets.html">Projets</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="a-propos.html">À propos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <section class="hero hero--projet">
+                <div class="wrapper">
+                    <h1 data-scrolly="scaleIn">Notre belle planete</h1>
+                    <div class="flex flex--hero-projet">
+                        <div class="hero__media" data-scrolly="fromLeft">
+                            <img
+                                src="assets/images/media_hero_planete.png"
+                                alt="Mockup projet planete"
+                            />
+                        </div>
+                        <div class="hero__content" data-scrolly="fromRight">
+                            <h3 class="txt--special">C'est quoi?</h3>
+                            <p class="description">
+                                Le but de ce projet était de creer le
+                                <span class="txt--special">design</span> d’un
+                                site web, visant à
+                                <span class="txt--special">sensibiliser</span>
+                                les 15-25 ans sur un
+                                <span class="txt--special">enjeu social</span>
+                                qui présente des risques pour la société et son
+                                avenir.
+                            </p>
+                            <div class="flex flex--cta-projet">
+                                <div class="type-projet">
+                                    <h3 class="txt--special">Type de projet</h3>
+                                    <p>Ce projet est une projet scolaire.</p>
+                                </div>
+                                <button class="button" data-scrolly="fromRight">
+                                    <a
+                                        href="https://www.figma.com/proto/2Secf7f3EVKcOfFEOOUNCJ/TP3---1021---%C3%89quipe-3?node-id=2%3A2&scaling=min-zoom&page-id=2%3A2&starting-point-node-id=835%3A2877"
+                                        target="_blank"
+                                        >Voir le prototype</a
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section--mini" data-scrolly="scaleIn">
+                        <span class="txt--special">Credits: </span>
+                        <a
+                            href="http://abourgouin.dectim.ca/Portfolio/"
+                            target="_blank"
+                            >Arthur Bourgouin</a
+                        >
+                        (Illustrations), Jeremy Brosseau et
+                        <a
+                            href="https://www.antoineguerette.com/"
+                            target="_blank"
+                        >
+                            Antoine Guérette
+                        </a>
+                        (Recherche et integration d’information), Ricardo Yanez
+                        (Planification et création du prototypage)
+                    </div>
+                </div>
+            </section>
+            <section class="section .section--concept">
+                <div class="wrapper flex flex--planete-concept">
+                    <div class="concept--content" data-scrolly="fromLeft">
+                        <h2 data-scrolly="scaleIn">le concept</h2>
+                        <p data-scrolly="scaleIn">
+                            Notre projet visait à sensibiliser notre public aux
+                            <span class="txt--special"
+                                >enjeux environnementaux,</span
+                            >
+                            tels que la déforestation, la pollution de l'eau,
+                            les gaz à effet de serre et l'élevage d’animaux. De
+                            plus, on leur propose des
+                            <span class="txt--special">solutions</span> et des
+                            <span class="txt--special">ressources</span> telles
+                            que des liens pour faire des dons ou signer des
+                            pétitions.
+                        </p>
+                    </div>
+                    <div class="concept--media" data-scrolly="fromRight">
+                        <img src="assets/images/planete.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="section section--maquettes">
+                <div class="wrapper">
+                    <h2 data-scrolly="fromTop">Evolution des maquettes</h2>
+                    <p data-scrolly="fromTop">
+                        Petite comparaison entre les maquettes en mode
+                        <span class="txt--special">wireframe</span> et les
+                        maquettes <span class="txt--special">finales.</span>
+                    </p>
+                    <img
+                        data-scrolly="scaleIn"
+                        src="assets/images/maquettes_planete.gif"
+                        alt=""
+                    />
+                </div>
+            </section>
+            <section data-component="Parallax" class="bg_anim">
+                <img
+                    src="assets/images/bg/bg_1.png"
+                    data-speed="-1"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_2.png"
+                    data-speed="5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_3.png"
+                    data-speed="-2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_4.png"
+                    data-speed="6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_5.png"
+                    data-speed="-8"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_6.png"
+                    data-speed="2"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_7.png"
+                    data-speed="-4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_8.png"
+                    data-speed="9"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_9.png"
+                    data-speed="-6"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_10.png"
+                    data-speed="4"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_11.png"
+                    data-speed="-5"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+                <img
+                    src="assets/images/bg/bg_12.png"
+                    data-speed="3"
+                    class="layer"
+                    alt="image pour parallax"
+                />
+            </section>
+            <footer class="footer">
+                <div class="wrapper">
+                    <nav class="nav__footer">
+                        <a class="logo_foot_phone" href="index.html"
+                            ><img src="assets/images/logo.svg" alt=""
+                        /></a>
+                        <ul>
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                        </ul>
+
+                        <a class="logo_foot" href="index.html"
+                            ><img src="assets/images/logo.svg" alt="" />
+                        </a>
+
+                        <ul>
+                            <li><a href="a-propos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <p>© Ricardo Yanez 2021</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

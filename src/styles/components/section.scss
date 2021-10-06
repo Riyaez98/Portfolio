@@ -65,3 +65,22 @@
         }
     }
 }
+
+.section--mini {
+    padding: 25px 15px;
+    a {
+        color: var(--color-secondary);
+    }
+}
+.section--maquettes {
+    p {
+        width: 80%;
+        text-align: center;
+        margin: 25px auto;
+    }
+    @media screen and (min-width: $breakpoint-sm) {
+        p {
+            width: 50%;
+        }
+    }
+}
