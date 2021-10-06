@@ -14,10 +14,26 @@
     .grid {
         display: grid;
         gap: var(--spacing-md);
-        grid-template-columns: 1fr;
+        margin-bottom: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        .input-no-txt1{
+            grid-area: nom;
+        }
+        .input-no-txt2{
+            grid-area: courriel;
+        }
+        .textarea{
+            grid-area: comment;
+        }
+        grid-template-areas:"nom nom"
+        "courriel courriel"
+        "comment comment";
 
         @media screen and (min-width: $breakpoint-md) {
-            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "nom courriel"
+            "comment comment";
         }
     }
     footer {
@@ -57,11 +73,13 @@
    ========================================================================== */
 .input {
     position: relative;
+    width: 100%;
 }
 .input__label {
     display: block;
     font-family: var(--font-primary);
     font-weight: 600;
+    width: 100%;
 }
 
 .input__element {
@@ -103,6 +121,15 @@
     &::placeholder {
         color: var(--color-neutral-dark);
     }
+}
+.input-no-txt{
+    // grid-column-start: 1;
+    // grid-column-end: span 2;
+    // @media screen and (min-width: $breakpoint-md) {
+    //     grid-column-start: 1;
+    //     grid-column-end: span 1;
+    // }
+
 }
 
 /*
