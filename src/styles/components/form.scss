@@ -16,24 +16,24 @@
         gap: var(--spacing-md);
         margin-bottom: 25px;
         grid-template-columns: repeat(2, 1fr);
-        .input-no-txt1{
-            grid-area: nom;
-        }
-        .input-no-txt2{
-            grid-area: courriel;
-        }
-        .textarea{
-            grid-area: comment;
-        }
-        grid-template-areas:"nom nom"
-        "courriel courriel"
-        "comment comment";
+        // .input-no-txt1{
+        //     grid-area: nom;
+        // }
+        // .input-no-txt2{
+        //     grid-area: courriel;
+        // }
+        // .textarea{
+        //     grid-area: comment;
+        // }
+        // grid-template-areas:"nom nom"
+        // "courriel courriel"
+        // "comment comment";
 
         @media screen and (min-width: $breakpoint-md) {
             // grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:
-            "nom courriel"
-            "comment comment";
+            // grid-template-areas:
+            // "nom courriel"
+            // "comment comment";
         }
     }
     footer {
