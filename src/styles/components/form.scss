@@ -246,6 +246,8 @@
     color: var(--color-fail);
     top: 0;
     opacity: 0;
+    user-select: none;
+    z-index: -1;
 }
 
 .error .message__error {
