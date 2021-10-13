@@ -73,8 +73,11 @@
         a {
             color: var(--color-secondary);
             font-weight: 700;
+            transform: rotate(25deg);
+            transition: all 0.5s;
             &:hover {
                 transform: scale(1);
+                transform: rotate(25deg);
             }
         }
     }
@@ -126,17 +129,26 @@
         font-family: var(--font-tertiary);
         li {
             margin: 0 25px;
-        }
-    }
-    a {
-        transition: all 0.5s;
-        &:hover {
-            color: var(--color-secondary);
-            font-weight: 700;
-            text-decoration: none;
+            transform: scale(1);
+            transform: rotate(0deg);
             transition: all 0.5s;
+            &:hover {
+                transform: scale(1.15);
+                color: var(--color-secondary);
+                font-weight: 700;
+                text-decoration: none;
+                transform: rotate(25deg);
+                transition: all 0.5s;
+            }
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+                color: var(--color-secondary);
+            }
         }
     }
+
     img {
         max-height: 60px;
         transition: all 0.5s;
