@@ -152,77 +152,28 @@
                         </ul>
                     </div>
                     <div class="section contact__form" data-scrolly="fromRight">
-                        <form
-                            action="https://formsubmit.co/contact@ryanez.ca"
-                            method="POST"
-                            class="form"
-                            autocomplete="off"
-                            data-component="Form"
-                        >
-                            <div class="form__body">
-                                <fieldset class="grid">
-                                    <div class="input input-no-txt1">
-                                        <labe class="input__label" for="name"
-                                            >Votre nom</labe
-                                        >
-                                        <input
-                                            class="input__element"
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Nom et prenom"
-                                            required
-                                        />
-                                        <p class="message__error">**Erreur**</p>
-                                    </div>
-
-                                    <div class="input input-no-txt2">
-                                        <label class="input__label" for="email"
-                                            >Votre courriel</label
-                                        >
-                                        <input
-                                            class="input__element"
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Votre courriel"
-                                            required
-                                        />
-                                        <p class="message__error">**Erreur**</p>
-                                    </div>
-
-                                    <div
-                                        class="input textarea u-grid-fullwidth"
-                                    >
-                                        <label
-                                            class="input__label"
-                                            for="message"
-                                            >Commentaire</label
-                                        >
-                                        <textarea
-                                            class="input__element"
-                                            maxlength="500"
-                                            name="message"
-                                            id="message"
-                                            placeholder="Veuillez rentre votre message ici S.V.P"
-                                        ></textarea>
-                                    </div>
-                                </fieldset>
-                                <footer class="form__footer">
-                                    <button
-                                        class="button"
-                                        type="submit"
-                                        name="submit"
-                                    >
-                                        Envoyer
-                                    </button>
-                                </footer>
-                            </div>
-
-                            <div class="form__confirmation">
-                                <h2>Merci</h2>
-                                <p>Votre formulaire a bien été envoyé</p>
-                            </div>
+                        <form class="form" action="mail.php" method="POST">
+                            <label class="input__label">Name</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="name"
+                            />
+                            <label class="input__label">Email</label>
+                            <input
+                                class="input__element"
+                                type="mail"
+                                name="email"
+                            />
+                            <label class="input__label">Message</label>
+                            <textarea
+                                class="input__element u-grid-fullwidth"
+                                name="message"
+                                rows="6"
+                                cols="25"
+                            ></textarea
+                            ><br />
+                            <input class="button" type="submit" value="Send" />
                         </form>
                     </div>
                 </div>
