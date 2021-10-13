@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head><!-- Hotjar Tracking Code for https://ryanez.ca/ -->
+    <head>
+        <!-- Hotjar Tracking Code for https://ryanez.ca/ -->
         <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:2638650,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 2638650, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
                 a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            })(
+                window,
+                document,
+                "https://static.hotjar.com/c/hotjar-",
+                ".js?sv="
+            );
         </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -142,7 +153,8 @@
                     </div>
                     <div class="section contact__form" data-scrolly="fromRight">
                         <form
-                            action=""
+                            action="contactform.php"
+                            method="post"
                             class="form"
                             autocomplete="off"
                             data-component="Form"
@@ -158,6 +170,7 @@
                                             type="text"
                                             name="name"
                                             id="name"
+                                            placeholder="Nom et prenom"
                                             required
                                         />
                                         <p class="message__error">**Erreur**</p>
@@ -172,6 +185,7 @@
                                             type="email"
                                             name="email"
                                             id="email"
+                                            placeholder="Votre courriel"
                                             required
                                         />
                                         <p class="message__error">**Erreur**</p>
@@ -182,19 +196,26 @@
                                     >
                                         <label
                                             class="input__label"
-                                            for="comment"
+                                            for="message"
                                             >Commentaire</label
                                         >
                                         <textarea
                                             class="input__element"
                                             maxlength="500"
-                                            name="comment"
-                                            id="comment"
+                                            name="message"
+                                            id="message"
+                                            placeholder="Veuillez rentre votre message ici S.V.P"
                                         ></textarea>
                                     </div>
                                 </fieldset>
                                 <footer class="form__footer">
-                                    <button class="button">Envoyer</button>
+                                    <button
+                                        class="button"
+                                        type="submit"
+                                        name="submit"
+                                    >
+                                        Envoyer
+                                    </button>
                                 </footer>
                             </div>
 
@@ -310,7 +331,9 @@
 
                         <ul>
                             <li><a href="a-propos.html">À propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="current-page">
+                                <a href="contact.html">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                     <p>© Ricardo Yanez 2021</p>

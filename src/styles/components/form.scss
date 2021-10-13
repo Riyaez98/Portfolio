@@ -119,7 +119,7 @@
 
     //autocomplete
     &::placeholder {
-        color: var(--color-neutral-dark);
+        color: rgba($color: #ffffff, $alpha: 0.25);
     }
 }
 
