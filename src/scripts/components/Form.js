@@ -80,7 +80,8 @@ export default class Form {
    * @param {HTMLElement} input -
    */
   addError(input) {
-    const container = input.closest('[data-input-container]') || input.closest('.input');
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
 
     container.classList.add('error');
   }
@@ -90,7 +91,8 @@ export default class Form {
    * @param {HTMLElement} input -
    */
   removeError(input) {
-    const container = input.closest('[data-input-container]') || input.closest('.input');
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
 
     container.classList.remove('error');
   }
