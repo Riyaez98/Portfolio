@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Scrollbar / 
+   ========================================================================== */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar-track {
+    background: rgba(225, 155, 25, 0.2);
+    border-radius: 100vw;
+    margin-block: 0.1em;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 100vw;
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--color-secondary) rgba(225, 155, 25, 0.2);
+        scrollbar-width: thin;
+    }
+}

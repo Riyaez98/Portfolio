@@ -4,7 +4,7 @@
    Les éléments de la page vont hérités des propriétés inscrite dans body
    ========================================================================== */
 body {
-    background: var(--color-bg-primary) no-repeat;
+    background: /*var(--color-bg-primary)*/ rgb(0, 2, 15) no-repeat;
     color: var(--color-white);
     font-family: var(--font-primary);
     font-size: var(--font-size-content-phone);
