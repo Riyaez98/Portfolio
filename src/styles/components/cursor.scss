@@ -1,0 +1,53 @@
+.cursor {
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 21;
+    pointer-events: none;
+    animation: cursorAnim 0.5s infinite alternate;
+}
+.cursor::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    outline: 8px solid var(--color-secondary);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.75);
+    }
+}
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid rgb(26, 142, 192);
+}

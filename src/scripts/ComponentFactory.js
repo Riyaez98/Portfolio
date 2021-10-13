@@ -6,6 +6,7 @@ import Form from './components/Form';
 import Typed from './components/TypedCostum';
 import Parallax from './components/Parallax';
 import Snackbar from './components/Snackbar';
+import Cursor from './components/Cursor';
 
 export default class ComponentFactory {
   constructor() {
@@ -19,6 +20,7 @@ export default class ComponentFactory {
       Typed,
       Parallax,
       Snackbar,
+      Cursor,
     };
     this.init();
   }

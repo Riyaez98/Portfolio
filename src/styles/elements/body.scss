@@ -10,6 +10,7 @@ body {
     font-size: var(--font-size-content-phone);
     line-height: 1.6;
     overflow-x: hidden;
+    cursor: none;
 
     @media screen and (min-width: $breakpoint-sm) {
         font-size: var(--font-size-content-laptop);
