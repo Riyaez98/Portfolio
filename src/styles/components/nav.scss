@@ -148,6 +148,14 @@
             }
         }
     }
+    .current-page {
+        color: var(--color-secondary);
+        font-weight: 700;
+        transform: rotate(25deg);
+        a {
+            color: var(--color-secondary);
+        }
+    }
 
     img {
         max-height: 60px;
