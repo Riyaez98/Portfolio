@@ -37,7 +37,7 @@ export default class Form {
 
     if (this.validate()) {
       console.log('succes');
-      this.showConfirmation();
+      // this.showConfirmation();
     } else {
       alert('Information manquante ou erronée');
     }
