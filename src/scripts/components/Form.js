@@ -33,7 +33,7 @@ export default class Form {
    * @param {type} name - description
    */
   onSubmit(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     if (this.validate()) {
       console.log('succes');
