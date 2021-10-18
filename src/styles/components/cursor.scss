@@ -7,6 +7,9 @@
     z-index: 21;
     pointer-events: none;
     animation: cursorAnim 0.5s infinite alternate;
+    @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+    }
 }
 .cursor::after {
     content: '';
@@ -17,6 +20,9 @@
     border-radius: 50%;
     opacity: 0.5;
     animation: cursorAnim2 0.5s infinite alternate;
+    @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+    }
 }
 
 @keyframes cursorAnim {
