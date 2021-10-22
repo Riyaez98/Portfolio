@@ -7,7 +7,7 @@
     z-index: 21;
     pointer-events: none;
     animation: cursorAnim 0.5s infinite alternate;
-    @media screen and (max-width: $breakpoint-xs) {
+    @media screen and (max-width: $breakpoint-sm) {
         display: none;
     }
 }
