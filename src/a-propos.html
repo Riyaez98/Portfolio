@@ -218,14 +218,34 @@
                 class="section section--video-presentation"
                 data-scrolly="fromRight"
             >
-                <h3 class="video">
+                <div class="wrapper">
+                    <!-- <h3 class="video--h3">
                     <a
                         class="txt--special"
                         href="https://www.youtube.com/watch?v=MvmjBg7Nxzw"
                         target="_blank"
                         >Regardez ma vidéo de présentation!</a
                     >
-                </h3>
+                </h3> -->
+
+                    <div
+                        class="video"
+                        data-component="Video"
+                        data-video-id="MvmjBg7Nxzw"
+                        data-scrolly="scaleIn"
+                    >
+                        <div class="video__media js-video">
+                            <img
+                                class="js-poster"
+                                src="assets/images/video_placeholder.png"
+                                alt="Image de place holder"
+                            />
+                            <svg class="icon icon--stroke icon--xl">
+                                <use xlink:href="#icon-play"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="section section--appel" data-scrolly="scaleIn">
                 <h2>

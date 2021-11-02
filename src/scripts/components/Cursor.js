@@ -13,7 +13,6 @@ export default class Cursor {
    * Méthode d'initialisation
    */
   init() {
-    console.log('Nouvelle instance de la composante -> Cursor');
     document.addEventListener('mousemove', (e) => {
       this.element.setAttribute(
         'style',
